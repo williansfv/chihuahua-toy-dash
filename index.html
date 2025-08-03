@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chihuahua Toy Dash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Score and timer UI -->
+        <div id="hud">
+            <span id="score">Pontuação: 0</span>
+            <span id="timer">Tempo: 60</span>
+        </div>
+        <!-- The game canvas -->
+        <canvas id="gameCanvas" width="960" height="832"></canvas>
+        <!-- End screen overlay (hidden by default) -->
+        <div id="overlay" class="hidden">
+            <div id="overlay-content">
+                <h1 id="end-title"></h1>
+                <p id="end-score"></p>
+                <button id="restart-btn">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
